@@ -1,18 +1,21 @@
 import style from "./Header.module.css";
+import logo from "../../assets/img/logo.svg";
+import { Container } from "../Container/Container.jsx";
+import classNames from "classnames";
 
 export const Header = () => (
-  <header className="header">
-    <div className="container header__container">
-      <img className="header__logo" src="img/logo.svg" alt="Логотип YourMeal" />
+  <header className={style.header}>
+    <Container className={style.container}>
+      <img className={style.logo} src={logo} alt="Логотип YourMeal" />
 
-      <div className="header__wrapper">
-        <h1 className="header__title">
+      <div className={style.wrapper}>
+        <h1 className={style.title}>
           <span>Только самые</span>
-          <span className="header__red">сочные бургеры!</span>
+          <span className={style.red}>сочные бургеры!</span>
         </h1>
 
-        <p className="header__appeal">Бесплатная доставка от 599₽</p>
+        <p className={style.appeal}>Бесплатная доставка от 599₽</p>
       </div>
-    </div>
+    </Container>
   </header>
 );

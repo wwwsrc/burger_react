@@ -5,7 +5,7 @@ export const App = () => {
   return (
     <>
       <Header />
-      <h1> Hello world!</h1>
+
       <main>
         <nav>
           <Container className="navigation__container" />
