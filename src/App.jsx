@@ -1,4 +1,5 @@
 import { Catalog } from "./components/Catalog/Catalog.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 import { Header } from "./components/Header/Header.jsx";
 import { Navigation } from "./components/Navigation/Navigation";
 
@@ -10,7 +11,7 @@ export const App = () => {
         <Navigation />
         <Catalog />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 };
