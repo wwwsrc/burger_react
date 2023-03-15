@@ -1,3 +1,4 @@
+import { CatalogProduct } from "../CatalogProduct/CatalogProduct";
 import { Container } from "../Container/Container";
 import { Order } from "../Order/Order";
 import style from "./Catalog.module.css";
@@ -22,7 +23,9 @@ export const Catalog = () => {
           <div className={style.wrap_list}>
             <ul className={style.list}>
               {goodsList.map((item) => (
-                <li className={style.item}>{item.title}</li>
+                <li className={style.item}>
+                  <CatalogProduct title={item.title} />
+                </li>
               ))}
             </ul>
           </div>
