@@ -1,4 +1,5 @@
-import style from "./Count.Module.css";
+import style from "./Count.module.css";
+
 export const Count = (props) => {
   return (
     <div className={style.count}>
