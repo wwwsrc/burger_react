@@ -3,7 +3,7 @@ import style from "./OrderGoods.module.css";
 
 const testovua = "klara";
 
-export const OrderGoods = ({ title }) => {
+export const OrderGoods = ({ i, title }) => {
   return (
     <li className={style.item}>
       <img className={style.image} src="img/burger_1.jpg" alt={title} />
