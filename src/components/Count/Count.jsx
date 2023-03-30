@@ -2,7 +2,6 @@ import { useState } from "react";
 import style from "./Count.module.css";
 
 export const Count = (props) => {
-  console.log(props);
   const [count, setCount] = useState(props.count);
   const addCount = () => {
     setCount(count + 1);
