@@ -2,6 +2,7 @@ import { Provider } from "react-redux";
 import { Catalog } from "./components/Catalog/Catalog.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { Header } from "./components/Header/Header.jsx";
+import { ModalDelivery } from "./components/ModalDelivery/ModalDelivery.jsx";
 import { Navigation } from "./components/Navigation/Navigation";
 import { store } from "./store/index.js";
 
@@ -14,6 +15,7 @@ export const App = () => {
         <Catalog />
       </main>
       <Footer />
+      <ModalDelivery />
     </Provider>
   );
 };
